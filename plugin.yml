@@ -1,0 +1,52 @@
+name: Employment
+api: 
+- 1.0.0
+- 2.0.0
+- 3.0.0
+- 3.0.0-ALPHA1
+- 3.0.0-ALPHA2
+- 3.0.0-ALPHA3
+- 3.0.0-ALPHA4
+- 3.0.0-ALPHA5
+- 4.0.0
+- 4.0.0-ALPHA1
+- 4.0.0-ALPHA2
+- 4.0.0-ALPHA3
+- 4.0.0-ALPHA4
+- 4.0.0-ALPHA5
+version: 1.0.0
+load: POSTWORLD
+main: Employment\Employment
+author: Exceed
+commands:
+  taskhelp:
+    description: "打工任务帮助"
+    permission: taskhelp.command
+  addtask:
+    description: "发布悬赏任务"
+    permission: addtask.command
+  deltask:
+    description: "取消打工任务"
+    permission: deltask.command
+  tasklist:
+    description: "打工任务列表"
+    permission: tasklist.command
+  seetask:
+    description: "查某悬赏任务"
+    permission: tasklist.command
+  fintask:
+    description: "提交悬赏任务"
+    permission: fintask.command
+permissions:
+  taskhelp.command: 
+    default: true
+  addtask.command: 
+    default: true
+  deltask.command: 
+    default: true
+  seetask.command: 
+    default: true
+  tasklist.command: 
+    default: true
+  fintask.command: 
+    default: true
